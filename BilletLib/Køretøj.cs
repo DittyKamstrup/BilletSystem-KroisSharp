@@ -14,13 +14,13 @@ namespace BilletLib
         public abstract int Pris();
         public abstract string Typekøretøj();
 
-        public string NummerpladeLænge()
+        public int NummerpladeLænge()
         {
-            if (Nummerplade.Length < 7  )
+            if (Nummerplade.Length > 7)
             {
                 throw new ArgumentException("Nummerplade er for lang");
             }
-            return Nummerplade;
+            return Nummerplade.Length ;
         }
         
 
