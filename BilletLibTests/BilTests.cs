@@ -44,7 +44,7 @@ namespace BilletLib.Tests
             //arrange
             Bil bil = new Bil();
             //act
-            string køretøj = bil.Køretøj();
+            string køretøj = bil.Typekøretøj();
             //assert
             Assert.AreEqual("Bil", køretøj);
         }
@@ -56,7 +56,7 @@ namespace BilletLib.Tests
             //arrange
             Bil bil = new Bil();
             //act
-            string køretøj = bil.Køretøj();
+            string køretøj = bil.Typekøretøj();
             //assert
             Assert.AreNotEqual("biil", køretøj);
         }

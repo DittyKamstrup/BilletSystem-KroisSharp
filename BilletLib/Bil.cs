@@ -6,26 +6,16 @@ using System.Threading.Tasks;
 
 namespace BilletLib
 {
-    public class Bil
+    public class Bil : Køretøj
     {
-        //props
-        public string Nummerplade { get; set; }
-        public DateTime Dato { get; set; }
-
-        /// <summary>
-        /// prisen er fast på 240kr 
-        /// </summary>
-        /// <returns></returns>
-        public int Pris()
+        public override int Pris()
         {
-            return 240;
+             return 240;
         }
 
-        public string Køretøj()
+        public override string Typekøretøj()
         {
             return "Bil";
         }
-
-
     }
 }
