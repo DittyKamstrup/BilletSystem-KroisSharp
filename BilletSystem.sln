@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilletSystem", "BilletSyste
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilletLib", "BilletLib\BilletLib.csproj", "{0E0C0C9A-6CBD-4044-861E-111FBEC66750}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilletLibTests", "BilletLibTests\BilletLibTests.csproj", "{52051839-1EF1-40CE-8374-CA39C9377099}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0E0C0C9A-6CBD-4044-861E-111FBEC66750}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E0C0C9A-6CBD-4044-861E-111FBEC66750}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E0C0C9A-6CBD-4044-861E-111FBEC66750}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52051839-1EF1-40CE-8374-CA39C9377099}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52051839-1EF1-40CE-8374-CA39C9377099}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52051839-1EF1-40CE-8374-CA39C9377099}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52051839-1EF1-40CE-8374-CA39C9377099}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
