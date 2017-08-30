@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BilletLib
 {
-    class MC
+  public  class MC
     {
         //props
         public String Nummerplade { get; set; }
