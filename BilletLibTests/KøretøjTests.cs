@@ -15,7 +15,7 @@ namespace BilletLib.Tests
         public void NummerpladeLængeTest7()
         {
             //arrange
-            Bil bil = new Bil();
+            Bil bil = new Bil(false);
             //act
             bil.Nummerplade = "1234567";
             int nummerpladelængde = bil.NummerpladeLænge();
@@ -28,7 +28,7 @@ namespace BilletLib.Tests
         public void NummerpladeLængeTest8()
         {
             //arrange
-            Bil bil = new Bil();
+            Bil bil = new Bil(false);
             //act
             bil.Nummerplade = "12345678";
             int nummerpladelængde = bil.NummerpladeLænge();
@@ -40,7 +40,7 @@ namespace BilletLib.Tests
         public void BrobizzRabatTestTrue()
         {
             //arrange
-            Bil bil = new Bil();
+            Bil bil = new Bil(false);
             //act
             int bropris = bil.BrobizzRabat();
             //assert

@@ -15,7 +15,7 @@ namespace BilletLib.Tests
         public void PrisTest240()
         {
             //arrange
-            Bil bil = new Bil();
+            Bil bil = new Bil(false);
 
             //act
             int pris = bil.Pris();
@@ -30,7 +30,7 @@ namespace BilletLib.Tests
         public void PrisTest239()
         {
             //arrange
-            Bil bil = new Bil();
+            Bil bil = new Bil(false);
 
             //act
             int pris = bil.Pris();
@@ -42,7 +42,7 @@ namespace BilletLib.Tests
         public void KøretøjTestBil()
         {
             //arrange
-            Bil bil = new Bil();
+            Bil bil = new Bil(false);
             //act
             string køretøj = bil.Typekøretøj();
             //assert
@@ -54,7 +54,7 @@ namespace BilletLib.Tests
         public void KøretøjTestBiil()
         {
             //arrange
-            Bil bil = new Bil();
+            Bil bil = new Bil(false);
             //act
             string køretøj = bil.Typekøretøj();
             //assert
@@ -65,7 +65,7 @@ namespace BilletLib.Tests
         public void BrobizzRabatTestSøndag()
         {
             //arrange
-            Bil bil = new Bil();
+            Bil bil = new Bil(false);
             DateTime dt = new DateTime(2017, 9, 3);
             //act
             bil.Dato = dt;
@@ -79,7 +79,7 @@ namespace BilletLib.Tests
         public void BrobizzRabatMandag()
         {
             //arrange
-            Bil bil = new Bil();
+            Bil bil = new Bil(false);
             DateTime dt = new DateTime(2017, 9, 4);
             //act
             bil.Dato = dt;

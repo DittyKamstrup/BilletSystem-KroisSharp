@@ -15,7 +15,7 @@ namespace BilletLib.Tests
         public void PrisTest125()
         {
             //arrange
-            MC MC = new MC();
+            MC MC = new MC(false);
             //act
             int pris = MC.Pris();
             //assert
@@ -26,7 +26,7 @@ namespace BilletLib.Tests
         public void KøretøjTestMC()
         {
             //arrange
-            MC MC = new MC();
+            MC MC = new MC(false);
             //act
             string Køretøj = MC.Typekøretøj();
             //assert
