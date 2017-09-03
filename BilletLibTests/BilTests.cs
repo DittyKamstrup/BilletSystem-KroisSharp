@@ -60,5 +60,33 @@ namespace BilletLib.Tests
             //assert
             Assert.AreNotEqual("biil", køretøj);
         }
+
+        [TestMethod()]
+        public void BrobizzRabatTestSøndag()
+        {
+            //arrange
+            Bil bil = new Bil();
+            DateTime dt = new DateTime(2017, 9, 3);
+            //act
+            bil.Dato = dt;
+            //assert
+            Assert.AreEqual(200, bil.BrobizzRabat());
+
+        }
+
+        
+        [TestMethod()]
+        public void BrobizzRabatMandag()
+        {
+            //arrange
+            Bil bil = new Bil();
+            DateTime dt = new DateTime(2017, 9, 4);
+            //act
+            bil.Dato = dt;
+            //assert
+            Assert.AreNotEqual(200, bil.BrobizzRabat());
+
+        }
+
     }
 }

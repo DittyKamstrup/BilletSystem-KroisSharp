@@ -17,5 +17,21 @@ namespace BilletLib
         {
             return "Bil";
         }
+
+        /// <summary>
+        /// overskrevet da biler har særlig vilkår ang. weekend priser
+        /// </summary>
+        /// <returns></returns>
+        public override int BrobizzRabat()
+        {
+            if (Dato.DayOfWeek == DayOfWeek.Saturday || Dato.DayOfWeek == DayOfWeek.Sunday)
+            {
+                int rabat = Pris() / 100 * 20;
+                int brobizzPris = Pris() - rabat;
+                return brobizzPris;
+            }
+            else
+            return base.BrobizzRabat();
+        }
     }
 }

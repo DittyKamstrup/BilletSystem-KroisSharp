@@ -32,7 +32,7 @@ namespace BilletLib
         /// og finder så brobizzPrisen og smider den tilbage
         /// </summary>
         /// <returns></returns>
-        public int BrobizzRabat()
+        public virtual int BrobizzRabat()
         {
             int rabat = Pris() / 100 * 5;
             int brobizzPris = Pris() - rabat;
@@ -40,6 +40,8 @@ namespace BilletLib
 
             return brobizzPris;
         }
+
+
 
     }
 }
