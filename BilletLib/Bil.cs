@@ -8,13 +8,31 @@ namespace BilletLib
 {
     public class Bil : Køretøj
     {
+
+
+        //ctor vi ønsker at vælge hvilken bro der bliver brugt
+        public Bil(bool øresundsbro)
+        {
+
+        }
+
+
         public override int Pris()
         {
+            //vi har if med grundet vi ønsker en anden pris for øresundsbro
+            if (Øresundsbro == true)
+            {
+                return 410;
+            }
              return 240;
         }
 
         public override string Typekøretøj()
         {
+            if (Øresundsbro == true)
+            {
+                return "Øresund Bil";
+            }
             return "Bil";
         }
 
@@ -24,6 +42,10 @@ namespace BilletLib
         /// <returns></returns>
         public override int BrobizzRabat()
         {
+            if (Øresundsbro == true)
+            {
+                return 161;
+            }
             if (Dato.DayOfWeek == DayOfWeek.Saturday || Dato.DayOfWeek == DayOfWeek.Sunday)
             {
                 int rabat = Pris() / 100 * 20;

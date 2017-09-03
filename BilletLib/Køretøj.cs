@@ -10,6 +10,10 @@ namespace BilletLib
     {
         public string Nummerplade { get; set; }
         public DateTime Dato { get; set; }
+        /// <summary>
+        /// bliver Øresundsbroen benyttet?
+        /// </summary>
+        public bool Øresundsbro { get; set; }
 
         public abstract int Pris();
         public abstract string Typekøretøj();
