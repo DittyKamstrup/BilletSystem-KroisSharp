@@ -9,6 +9,15 @@ namespace BilletLib
     public class MC : Køretøj
     {
 
+        //FEEDBACK
+        //Evt. lave en constructor for MC med passende variabler fra base klassen
+
+        //F.eks.
+        //public MC(string bro, string nummerPlade, DateTime dato) : base(bro, nummerPlade, dato)
+        //{
+        //
+        //}
+
         public MC(bool Øresundsbro)
         {
 

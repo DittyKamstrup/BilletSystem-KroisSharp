@@ -9,6 +9,16 @@ namespace BilletLib
     public class Bil : Køretøj
     {
 
+        //FEEDBACK
+        //Evt. lave en constructor for Bil med passende variabler fra base klassen
+
+        //F.eks.
+        //public Bil(string bro, string nummerPlade, DateTime dato) : base(bro, nummerPlade, dato)
+        //{
+        //
+        //}
+
+
 
         //ctor vi ønsker at vælge hvilken bro der bliver brugt
         public Bil(bool øresundsbro)
